@@ -402,4 +402,33 @@ li {
     display: none;
   }
 
+  .article-card-1 {
+    padding: 0.5rem;
+  }
+
+  .article-text div h2 {
+    font-weight: 600;
+  }
+
+  .article-card-1 h4 {
+    font-weight: 300;
+    margin-right: 0;
+    color: #666666;
+  }
+
+  .article-card-1 p {
+    font-weight: 200;
+    font-size: 1rem;
+    color: #666666;
+  }
+
+  .article-card-2 {
+    padding: 0.3rem;
+  }
+
+  .medium-av {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
 }
