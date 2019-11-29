@@ -1,0 +1,163 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 4rem;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #d7c79e;
+  height: 3rem;
+  border-bottom: 2px solid #cccccc;
+}
+
+.header-item {
+  flex-basis: 33%;
+  margin: 0 1rem;
+  width: 100%;
+}
+
+#header-logo {
+  background: black;
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 800;
+  padding: 0.3rem 1rem;
+  width: 6rem;
+}
+
+.header-item .header-search {
+  width: 100%;
+  height: 2.35rem;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#nav-links img {
+  margin-left: 2rem;
+}
+
+/* Buttons */
+.btn {
+  text-align: center;
+  text-decoration: none;
+  border: black solid 0.1rem;
+  background: #9dab86;
+  color: black;
+  padding: 0.2rem;
+  height: 1.5rem;
+}
+
+.medium {
+  width: 8rem;
+}
+
+.large {
+  width: 15rem;
+  height: 2.2rem;
+  background: #cfd7ff;
+  border: none;
+  line-height: 2.2rem;
+  border-radius: 0.3rem;
+}
+
+.edit {
+  width: 6rem;
+  border-radius: 1.1rem;
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+.delete {
+  width: 6rem;
+  border-radius: 1.1rem;
+  margin: 0 1rem;
+  background: black;
+  color: whitesmoke !important;
+  font-weight: 500;
+}
+
+.round {
+  font-family: "HelveticaNeue-CondensedBold",
+    "HelveticaNeueBoldCondensed",
+    "HelveticaNeue-Bold-Condensed",
+    "Helvetica Neue Bold Condensed",
+    "HelveticaNeueBold",
+    "HelveticaNeue-Bold",
+    "Helvetica Neue Bold",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    "TeXGyreHerosCnBold",
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial Narrow",
+    "Arial", sans-serif;
+  font-weight: 550;
+  width: 12rem;
+  border-radius: 1.7rem;
+  background: none;
+  color: #1b4bcb;
+  border: #1b4bcb solid 0.15rem;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Avatars */
+.avatar {
+  border-radius: 50%;
+}
+
+.small-av {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.medium-av {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* Anchor tags */
+.normalized {
+  text-decoration: none;
+  color: black;
+}
+
+/* icons */
+
+.icon {
+  font-size: 2rem;
+  margin-right: 1.1rem;
+  color: black;
+}
+
+/* Section body */
+#s1-body {
+  background: #f8f8f8;
+}
+
+@media (max-width: 576px) {
+
+  .h-article {
+    display: none;
+  }
+
+}
