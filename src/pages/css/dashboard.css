@@ -31,7 +31,11 @@
     width: unset;
   }
 
+  .post-card h2 {
+    font-weight: 500;
+  }
+
   #s2-main {
-    margin: 0 1rem;
+    margin: 0 0.7rem;
   }
 }
