@@ -1,0 +1,434 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 4rem;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #d7c79e;
+  height: 3rem;
+  border-bottom: 2px solid #cccccc;
+}
+
+.header-item {
+  flex-basis: 33%;
+  margin: 0 1rem;
+  width: 100%;
+}
+
+#header-logo {
+  background: black;
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 800;
+  padding: 0.3rem 1rem;
+  width: 6rem;
+}
+
+.header-item .header-search {
+  width: 100%;
+  height: 2.35rem;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#nav-links img {
+  margin-left: 2rem;
+}
+
+/* Buttons */
+.btn {
+  text-align: center;
+  text-decoration: none;
+  border: black solid 0.1rem;
+  background: #9dab86;
+  color: black;
+  padding: 0.2rem;
+  height: 1.5rem;
+}
+
+.medium {
+  width: 8rem;
+}
+
+.round {
+  font-family: "HelveticaNeue-CondensedBold",
+    "HelveticaNeueBoldCondensed",
+    "HelveticaNeue-Bold-Condensed",
+    "Helvetica Neue Bold Condensed",
+    "HelveticaNeueBold",
+    "HelveticaNeue-Bold",
+    "Helvetica Neue Bold",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    "TeXGyreHerosCnBold",
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial Narrow",
+    "Arial", sans-serif;
+  font-weight: 550;
+  width: 12rem;
+  border-radius: 1.7rem;
+  background: none;
+  color: #1b4bcb;
+  border: #1b4bcb solid 0.15rem;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Avatars */
+.avatar {
+  border-radius: 50%;
+}
+
+.small-av {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.medium-av {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* Anchor tags */
+.normalized {
+  text-decoration: none;
+  color: black;
+}
+
+/* icons */
+
+.icon {
+  font-size: 2rem;
+  margin-right: 1.1rem;
+  color: black;
+}
+
+/* Section body */
+#s1-body {
+  display: grid;
+  grid-template-areas: 'a b b b c';
+  background: #f8f8f8;
+  grid-gap: 0 2rem;
+}
+
+#s2-left {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+}
+
+#s2-middle {
+  grid-area: b;
+}
+
+#s2-right {
+  grid-area: c;
+}
+
+/* Left section */
+#user-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  height: 4.5rem;
+  border-left: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+}
+
+#user-card h3,
+#user-card h5 {
+  margin: 0;
+  font-weight: 400;
+}
+
+#user-card img,
+#category-list .list {
+  margin: 0 0.6rem;
+}
+
+#category-list,
+#key-links,
+.article-card,
+#gifs-right,
+#articles-right {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  border-left: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+}
+
+#category-list p,
+#key-links p,
+#gifs-right p,
+#articles-right p {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  margin: 1rem 0.6rem;
+}
+
+
+#key-links .list,
+.social-media-icons {
+  margin: 0 1.2rem;
+}
+
+#key-links p {
+  font-weight: 750;
+}
+
+.list h2 {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Middle section */
+
+.feeds {
+  display: flex;
+  margin-top: 2.75rem;
+}
+
+.btn-feed {
+  width: 4rem;
+}
+
+#s3-articles {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 0.1rem;
+}
+
+.article-card-1 {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-items: auto;
+}
+
+.article-text h2,
+.article-text h4,
+.article-text p {
+  margin: 0;
+}
+
+.article-text {
+  margin-left: 0.75rem;
+}
+
+.article-text div {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.article-text div h4 {
+  margin-right: 0.3rem;
+  font-weight: 500;
+}
+
+.article-tag {
+  margin-top: 0.55rem !important;
+}
+
+.article-card-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.3rem;
+  padding-right: 1rem;
+}
+
+.article-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ion-md-heart {
+  color: #a35638;
+}
+
+
+.ion-ios-chatbubbles {
+  color: #9dab86;
+}
+
+.ion-ios-chatbubbles,
+.ion-md-heart {
+  font-size: 1.5rem;
+}
+
+.icon-like,
+.icon-comment {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+/* Right section */
+#gifs-right {
+  margin-top: 2rem;
+}
+
+#gifs-right h4,
+#articles-right h4 {
+  margin: 0;
+  font-weight: 450;
+}
+
+#gifs-right .icon,
+#articles-right .icon {
+  font-size: 1.2rem;
+}
+
+ul {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  list-style-position: outside;
+  list-style-type: disc;
+  color: #a35638;
+  padding-left: 2rem;
+  padding-right: 0.5rem;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+#gifs-right .icon-comment,
+#articles-right .icon-comment {
+  margin: 0;
+}
+
+@media (max-width: 1270px) {
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    padding: 0 0.8rem;
+  }
+}
+
+@media (max-width: 1120px) {
+  .container {
+    padding-left: 0.5rem;
+  }
+
+  #s1-body {
+    grid-template-areas: 'a b b b b b b';
+  }
+
+  #s3-right {
+    display: none;
+  }
+
+  .article-card {
+    margin-right: 3.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  #s1-body {
+    grid-template-areas: 'b b b b b b';
+  }
+
+  #s2-left {
+    display: none;
+  }
+
+  #s2-middle {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.3rem;
+  }
+
+  .article-card {
+    margin-right: 0;
+  }
+
+  #s2-middle {
+    margin: 0 1rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #s2-middle {
+    margin: 0 0.5rem;
+  }
+
+  .h-article {
+    display: none;
+  }
+
+  .article-card-1 {
+    padding: 0.5rem;
+  }
+
+  .article-text div h2 {
+    font-weight: 600;
+  }
+
+  .article-card-1 h4 {
+    font-weight: 300;
+    margin-right: 0;
+    color: #666666;
+  }
+
+  .article-card-1 p {
+    font-weight: 200;
+    font-size: 1rem;
+    color: #666666;
+  }
+
+  .article-card-2 {
+    padding: 0.3rem;
+  }
+
+  .medium-av {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+}
