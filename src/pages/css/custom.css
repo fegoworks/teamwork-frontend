@@ -42,6 +42,15 @@ header {
   height: 2.35rem;
 }
 
+input[type="search"] {
+  padding: 0 0.3rem;
+}
+
+input[type="search"]::placeholder {
+  margin: 0 0.3rem;
+  font-size: 1rem;
+}
+
 #nav-links {
   display: flex;
   align-items: center;
@@ -126,6 +135,14 @@ header {
   margin: 0 auto;
   padding: 0.5rem;
   margin-bottom: 3rem;
+}
+
+.publish {
+  width: 8rem;
+  border-radius: 1.7rem;
+  background: #1b4bcb;
+  color: white;
+  border: none;
 }
 
 /* Avatars */
