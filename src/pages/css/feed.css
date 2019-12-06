@@ -228,6 +228,10 @@ li {
   #s2-middle {
     margin-left: 3rem;
   }
+
+  .article-text h2 {
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 768px) {
