@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Post</title>
+  <link rel="stylesheet" href="../css/custom.css" />
+  <link rel="stylesheet" href="../css/view-article.css" />
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container">
+    <div class="header-item">
+      <a id="header-logo" class="normalized" href="feed.html">Teamwork</a>
+    </div>
+    <div class="header-item">
+      <input type="search" class="header-search " placeholder="Search" />
+    </div>
+    <div class="header-item" id="nav-links">
+      <a href="post.html" class="btn medium h-article">Create Article</a>
+      <div class="dropdown">
+        <img class="small-av avatar"
+          src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="" />
+        <div class="dropdown-content">
+          <div>
+            <h3>@fego</h3>
+          </div>
+          <a class="normalized" href="dashboard.html">Dashboard</a>
+          <a class="normalized" href="post.html">Write an Article</a>
+          <a class="normalized" href="">Key Links</a>
+          <a class="normalized" href="">Sign Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="s1-body" class="article-container">
+    <section id="s2-left">
+      <div class="icon-like">
+        <a href=""><i class="icon ion-md-heart"></i></a>
+        <span>5</span>
+      </div>
+      <div class="icon-comment">
+        <a href=""><i class="icon ion-ios-chatbubbles"></i></a>
+        <span>55</span>
+      </div>
+      <a href="" class="normalized">DISCUSS</a>
+    </section>
+
+    <section id="s2-article">
+      <div>
+        <article class="article-intro">
+          <h2>Clean Code Applied to JavaScript — Part III. Functions</h2>
+          <div class="article-info">
+            <img class="small-av avatar"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="" />
+            <span>Edafe Oghenefego</span>
+            <span>Dec 6</span>-<span>9 min read</span>
+          </div>
+          <h4>#JavaScript</h4>
+        </article>
+        <article class="article-body">
+          <p>When we design functions that operate on objects or data flows (in this example an object) they are
+            usually functions that do a single task, with a single level of abstraction and without side effects which
+            causes that to perform complex tasks we need to perform the combination of several of them. Therefore, it
+            develops chained methods since they allow a more readable code, and it is the side effect of having been
+            performing the previous "duties" well when designing the functions.
+            <br><br>
+            If you know Linux, you have to think that all the commands are intended to do just one thing and do it well
+            but we have a complex operating system working with simple functions. This is achieved thanks to the use of
+            pipes to combine the different commands.
+            <br><br>
+            In our specific case, we have to build something similar, whether using objects or functions. In the
+            following examples, we illustrate the Car class in which chained methods are used versus traditional ones.
+          </p>
+          <p>
+            Throughout this post, we have addressed how to apply clean code to a fundamental piece for developers, which
+            we find in all programming languages: Functions.
+            <br><br>
+            The design of functions applying clean code is essential because the functions are the basic element to
+            decouple the code. However, bad practices in the design of functions can lead us to keep the code as coupled
+            as without them but with the complexity of introducing functions. In addition, the poor design of the
+            functions leads to serious bugs that are difficult to find. As we rise in the levels of software
+            abstraction, it will be more difficult to locate the points where the bugs occur.
+            <br><br>
+            Therefore, the recommendations presented in this post will make you scale a level in the quality of your
+            code, but do not apply them without sufficient reflection. Remember, there are no magic tips or silver
+            bullets but there is a set of techniques that will allow you to solve a wider range of problems.
+            <br><br>
+            Finally, the points we have addressed are the following:
+            <br><br>
+            Use default arguments instead of short circuiting or conditionals.
+            Function arguments (2 or fewer ideally).
+            Avoid side effects - Global Variables.
+            Avoid side effects - Objects Mutables.
+            Functions should do one thing.
+            Functions should only be one level of abstraction.
+            Favor functional programming over imperative programming.
+          </p>
+        </article>
+      </div>
+      <section class="comment">
+        <textarea name="" id="" placeholder="Add to the discussion"></textarea>
+        <div class="comment-btn">
+          <div></div>
+          <a href="" class="btn medium">SUBMIT</a>
+        </div>
+      </section>
+
+      <section class="comments">
+        <article class="comment-card">
+          <div class="top">
+            <div class="left">
+              <img class="small-av avatar"
+                src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="" />
+              <span>Edafe Oghenefego</span>
+            </div>
+            <span>Dec 6</span>
+          </div>
+          <p>Thank you very much!
+            <br><br>
+            I have already thought up to 6 parts for it!
+            <br><br>
+            I do not want to extend too much in the series but I want to see the beauty of clean code.
+            <br><br>
+            A greeting!
+            <br><br>
+          </p>
+          <div class="icon-like">
+            <a href=""><i class="icon ion-md-heart"></i></a>
+            <span>5</span>
+          </div>
+        </article>
+        <article class="comment-card">
+          <div class="top">
+            <div class="left">
+              <img class="small-av avatar"
+                src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="" />
+              <span>Edafe Oghenefego</span>
+            </div>
+            <span>Dec 6</span>
+          </div>
+          <p>Thank you very much!
+            <br><br>
+            I have already thought up to 6 parts for it!
+            <br><br>
+            I do not want to extend too much in the series but I want to see the beauty of clean code.
+            <br><br>
+            A greeting!
+            <br><br>
+          </p>
+          <div class="icon-like">
+            <a href=""><i class="icon ion-md-heart"></i></a>
+            <span>5</span>
+          </div>
+        </article>
+        <article class="comment-card">
+          <div class="top">
+            <div class="left">
+              <img class="small-av avatar"
+                src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="" />
+              <span>Edafe Oghenefego</span>
+            </div>
+            <span>Dec 6</span>
+          </div>
+          <p>Thank you very much!
+            <br><br>
+            I have already thought up to 6 parts for it!
+            <br><br>
+            I do not want to extend too much in the series but I want to see the beauty of clean code.
+            <br><br>
+            A greeting!
+            <br><br>
+          </p>
+          <div class="icon-like">
+            <a href=""><i class="icon ion-md-heart"></i></a>
+            <span>5</span>
+          </div>
+        </article>
+        <article class="comment-card">
+          <div class="top">
+            <div class="left">
+              <img class="small-av avatar"
+                src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="" />
+              <span>Edafe Oghenefego</span>
+            </div>
+            <span>Dec 6</span>
+          </div>
+          <p>Thank you very much!
+            <br><br>
+            I have already thought up to 6 parts for it!
+            <br><br>
+            I do not want to extend too much in the series but I want to see the beauty of clean code.
+            <br><br>
+            A greeting!
+            <br><br>
+          </p>
+          <div class="icon-like">
+            <a href=""><i class="icon ion-md-heart"></i></a>
+            <span>5</span>
+          </div>
+        </article>
+        <article class="comment-card">
+          <div class="top">
+            <div class="left">
+              <img class="small-av avatar"
+                src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="" />
+              <span>Edafe Oghenefego</span>
+            </div>
+            <span>Dec 6</span>
+          </div>
+          <p>Thank you very much!
+            <br><br>
+            I have already thought up to 6 parts for it!
+            <br><br>
+            I do not want to extend too much in the series but I want to see the beauty of clean code.
+            <br><br>
+            A greeting!
+            <br><br>
+          </p>
+          <div class="icon-like">
+            <a href=""><i class="icon ion-md-heart"></i></a>
+            <span>5</span>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section id="s3-right">
+      <div class="user-card">
+        <div class="one">
+          <img class="small-av avatar"
+            src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="" />
+          <div class="right">
+            <h3>Edafe Oghenefego</h3>
+            <h4>@fego</h4>
+          </div>
+        </div>
+        <p>I'm PhD. in Computer Science from Málaga, Spain. Currently, I am teaching developers and degree/master
+          computer science how to be experts in web technologies and computer science.
+        </p>
+        <a class="btn occupy" href="">+FOLLOW</a>
+        <div class="two">
+          <p>Location</p>
+          <h4>Lagos</h4>
+        </div>
+        <div class="two">
+          <p>education</p>
+          <h4>BSC. Computer Science</h4>
+        </div>
+        <div class="two">
+          <p>Joined</p>
+          <h4>Feb 22, 2019</h4>
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+</html>
