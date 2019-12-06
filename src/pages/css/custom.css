@@ -183,6 +183,16 @@ input[type="search"]::placeholder {
   border: none;
 }
 
+.occupy {
+  display: block;
+  width: 100%;
+  border-radius: 0.3rem;
+  background: #af4343;
+  padding: 0.6rem 0;
+  color: white;
+  border: none;
+}
+
 /* Avatars */
 .avatar {
   border-radius: 50%;
