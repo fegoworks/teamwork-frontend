@@ -200,29 +200,8 @@ li {
   margin: 0;
 }
 
-@media (max-width: 1270px) {
-
-  .container {
-    padding: 0 1.5rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    padding: 0 1rem;
-  }
-}
-
-@media (max-width: 1150px) {
-  .container {
-    padding: 0 0.8rem;
-  }
-}
 
 @media (max-width: 1120px) {
-  .container {
-    padding-left: 0.5rem;
-  }
 
   #s1-body {
     grid-template-areas: 'a b b b b b b';
@@ -249,13 +228,13 @@ li {
   #s2-middle {
     margin-left: 3rem;
   }
+
+  .article-text h2 {
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 0.3rem;
-  }
-
   .article-card {
     margin-right: 0;
   }

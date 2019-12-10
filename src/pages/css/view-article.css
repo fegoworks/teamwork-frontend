@@ -1,0 +1,293 @@
+.article-container {
+  display: grid;
+  grid-template-columns: 0.2fr 5fr 2fr;
+  grid-column-gap: 1rem;
+  padding-right: 3rem;
+}
+
+/* Left Section */
+#s2-left {
+  margin-top: 2.6rem;
+  height: 100vh;
+  position: sticky;
+  top: 5.8rem;
+  bottom: 0;
+}
+
+#s2-left span {
+  font-size: 0.8rem;
+}
+
+#s2-left>a {
+  margin: 1rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin: 0.3rem;
+}
+
+.icon-like,
+.icon-comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0.5rem;
+}
+
+.ion-md-heart {
+  color: #af4343;
+}
+
+.ion-ios-chatbubbles {
+  color: #a1c9eb
+}
+
+/* Article Section */
+#s2-article {
+  background: white;
+  margin: 2rem 0;
+  border-radius: 0.3rem;
+  border-left: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+}
+
+#s2-article>div {
+  padding: 2rem 6rem;
+}
+
+.article-intro h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 3.1rem;
+}
+
+.article-info,
+.comment-card .top .left {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.article-info span,
+.left span {
+  margin: 0 0.5rem;
+  font-weight: 500;
+  color: #7e8486
+}
+
+.article-intro h4 {
+  margin: 1rem 0;
+  color: white;
+  background: #23306b;
+  font-size: 0.8rem;
+  width: 5rem;
+  padding: 0.2rem;
+}
+
+.article-body {
+  line-height: 2.3rem;
+}
+
+.article-body p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Comment section */
+.comment {
+  background: #f8f8f8;
+  border: 1px solid #cccccc;
+  padding: 1.3rem;
+  margin: 2.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.comment textarea {
+  border: 1px solid #cccccc;
+  height: 10rem;
+  width: 99.5%;
+  resize: none;
+  outline: none;
+  margin-bottom: 0.2rem;
+}
+
+.comment .comment-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-btn a {
+  background: #6e80d4;
+  width: 5rem;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.comments {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-row-gap: 0.5rem;
+  margin: 2.5rem;
+
+}
+
+.comment-card {
+  border: 1px solid #cccccc;
+  padding: 0.8rem;
+}
+
+.comment-card .left {
+  margin: 0 !important;
+}
+
+.comment-card .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top>span {
+  font-weight: 300;
+  font-size: 0.8rem;
+
+}
+
+.comment-card .icon-like {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.comment-card .icon-like span {
+  border: 1px solid #cccccc;
+  font-weight: 350;
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
+}
+
+/* Bio Section */
+#s3-right {
+  margin-top: 2rem;
+  height: 100vh;
+  position: sticky;
+  top: 5.2rem;
+}
+
+.user-card {
+  background: white;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border-left: 1px solid #af4343;
+  border-top: 1px solid #af4343;
+  border-right: 2px solid #af4343;
+  border-bottom: 2px solid #af4343;
+}
+
+.user-card .one {
+  display: flex;
+  align-items: center;
+}
+
+.user-card .one h3,
+.user-card .one h4 {
+  margin: 0 0.5rem;
+}
+
+.user-card>p {
+  font-style: oblique;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.user-card .two {
+  margin: 1rem 0;
+}
+
+.user-card .two h4,
+.user-card .two p {
+  margin: 0.1rem 0;
+}
+
+@media (max-width: 1270px) {
+
+  .article-container {
+    padding: 0 2rem;
+    grid-template-columns: 5fr 2fr;
+  }
+
+  #s2-left {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1250px) {
+
+  .article-container {
+    padding: 0 2rem;
+    grid-template-columns: 5fr;
+  }
+
+  #s2-article {
+    width: 880px;
+    margin: 2rem auto;
+  }
+
+  #s3-right {
+    display: none;
+  }
+
+}
+
+@media (max-width: 999px) {
+
+  .article-container {
+    padding: 0;
+    grid-template-columns: 5fr;
+  }
+
+  #s2-article {
+    width: unset;
+    margin: 1rem;
+  }
+
+  .article-intro h2 {
+    font-weight: 550;
+    font-size: 2.7rem;
+  }
+
+  #s3-right {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #s2-article {
+    margin: 0;
+    border: none;
+  }
+
+  .article-intro h2 {
+    font-weight: 500;
+    font-size: 2.1rem;
+  }
+
+  #s2-article>div {
+    padding: 1rem 4rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #s2-article>div {
+    padding: 1rem 2rem;
+  }
+}
