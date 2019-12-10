@@ -8,6 +8,10 @@
 /* Left Section */
 #s2-left {
   margin-top: 2.6rem;
+  height: 100vh;
+  position: sticky;
+  top: 5.8rem;
+  bottom: 0;
 }
 
 #s2-left span {
@@ -168,7 +172,10 @@
 
 /* Bio Section */
 #s3-right {
-  margin-top: 2rem
+  margin-top: 2rem;
+  height: 100vh;
+  position: sticky;
+  top: 5.2rem;
 }
 
 .user-card {
@@ -205,4 +212,82 @@
 .user-card .two h4,
 .user-card .two p {
   margin: 0.1rem 0;
+}
+
+@media (max-width: 1270px) {
+
+  .article-container {
+    padding: 0 2rem;
+    grid-template-columns: 5fr 2fr;
+  }
+
+  #s2-left {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1250px) {
+
+  .article-container {
+    padding: 0 2rem;
+    grid-template-columns: 5fr;
+  }
+
+  #s2-article {
+    width: 880px;
+    margin: 2rem auto;
+  }
+
+  #s3-right {
+    display: none;
+  }
+
+}
+
+@media (max-width: 999px) {
+
+  .article-container {
+    padding: 0;
+    grid-template-columns: 5fr;
+  }
+
+  #s2-article {
+    width: unset;
+    margin: 1rem;
+  }
+
+  .article-intro h2 {
+    font-weight: 550;
+    font-size: 2.7rem;
+  }
+
+  #s3-right {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #s2-article {
+    margin: 0;
+    border: none;
+  }
+
+  .article-intro h2 {
+    font-weight: 500;
+    font-size: 2.1rem;
+  }
+
+  #s2-article>div {
+    padding: 1rem 4rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #s2-article>div {
+    padding: 1rem 2rem;
+  }
 }
