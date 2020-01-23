@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Admin</title>
+  <link rel="stylesheet" href="../css/custom.css" />
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+
+<body>
+  <header class="container">
+    <div class="header-item">
+      <a id="header-logo" class="normalized" href="../user/feed.html">Teamwork</a>
+    </div>
+    <div class="header-item">
+      <input type="search" class="header-search " placeholder="Search" />
+    </div>
+    <div class="header-item" id="nav-links">
+      <div class="dropdown">
+        <img class="small-av avatar"
+          src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="" />
+        <div class="dropdown-content">
+          <div>
+            <h3>@fego</h3>
+          </div>
+          <a class="normalized" href="dashboard.html">Dashboard</a>
+          <a class="normalized" href="post.html">Create new account</a>
+          <a class="normalized" href="">Key Links</a>
+          <a class="normalized" href="">Sign Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="s1-body">
+
+    <!-- Modal to create new employee account -->
+    <div class="account-modal" id="account-modal">
+      <!-- Close modal -->
+      <span class="close">&times;</span>
+
+      <form class="account-form" action="">
+
+        <h1>Create new employee</h1>
+        <label for="firstName">
+          First Name
+          <input type="text" id="firstName" />
+        </label>
+        <label for="lastName">
+          Last Name
+          <input type="text" id="lastName" />
+        </label>
+        <label for="email">
+          Email
+          <input type="email" id="email" />
+        </label>
+        <label for="password">
+          Password
+          <input type="password" id="password" />
+        </label>
+        <label for="gender">
+          Gender
+          <select name="" id="gender">
+            <option value="">Male</option>
+            <option value="">Female</option>
+          </select>
+        </label>
+        <label for="department">
+          Department
+          <input type="text" id="department" />
+        </label>
+        <label for="address">
+          Address
+          <input type="text" id="address" />
+        </label>
+        <label for="jobRole">
+          Job Role
+          <select name="jobRole" id="jobRole">
+            <option value="">Employee</option>
+            <option value="">Administrator</option>
+          </select>
+        </label>
+        <button class="btn publish">Submit</button>
+      </form>
+
+    </div>
+
+    <!-- Admin dashboard -->
+    <section id="s2-admin-dash">
+      <div class="create-new">
+        <div>
+          <h3>Employees</h3>
+        </div>
+        <button class="btn medium" id="new-account">New Employee</button>
+      </div>
+      <section class="employees">
+        <article class="employee-card">
+          <div class="employee-avatar">
+            <img class="avatar medium-av"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="hhhh">
+          </div>
+          <div class="employee-info">
+            <div>
+              <p>Name </p><span>Fego Fufu_Warrior</span>
+            </div>
+            <div>
+              <p>Start Date </p><span>04 Apr 2020</span>
+            </div>
+            <div>
+              <p>Gender </p><span>Male</span>
+            </div>
+            <div>
+              <p>Department </p><span>IT</span>
+            </div>
+            <div>
+              <p>Job Role </p><span>Senior Manager</span>
+            </div>
+          </div>
+          <a href="" class="btn delete-employee">Delete </a>
+        </article>
+        <article class="employee-card">
+          <div class="employee-avatar">
+            <img class="avatar medium-av"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="hhhh">
+          </div>
+          <div class="employee-info">
+            <div>
+              <p>Name </p><span>Fego Fufu_Warrior</span>
+            </div>
+            <div>
+              <p>Start Date </p><span>04 Apr 2020</span>
+            </div>
+            <div>
+              <p>Gender </p><span>Male</span>
+            </div>
+            <div>
+              <p>Department </p><span>IT</span>
+            </div>
+            <div>
+              <p>Job Role </p><span>Senior Manager</span>
+            </div>
+          </div>
+          <a href="" class="btn delete-employee">Delete </a>
+        </article>
+        <article class="employee-card">
+          <div class="employee-avatar">
+            <img class="avatar medium-av"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="hhhh">
+          </div>
+          <div class="employee-info">
+            <div>
+              <p>Name </p><span>Fego Fufu_Warrior</span>
+            </div>
+            <div>
+              <p>Start Date </p><span>04 Apr 2020</span>
+            </div>
+            <div>
+              <p>Gender </p><span>Male</span>
+            </div>
+            <div>
+              <p>Department </p><span>IT</span>
+            </div>
+            <div>
+              <p>Job Role </p><span>Senior Manager</span>
+            </div>
+          </div>
+          <a href="" class="btn delete-employee">Delete </a>
+        </article>
+        <article class="employee-card">
+          <div class="employee-avatar">
+            <img class="avatar medium-av"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="hhhh">
+          </div>
+          <div class="employee-info">
+            <div>
+              <p>Name </p><span>Fego Fufu_Warrior</span>
+            </div>
+            <div>
+              <p>Start Date </p><span>04 Apr 2020</span>
+            </div>
+            <div>
+              <p>Gender </p><span>Male</span>
+            </div>
+            <div>
+              <p>Department </p><span>IT</span>
+            </div>
+            <div>
+              <p>Job Role </p><span>Senior Manager</span>
+            </div>
+          </div>
+          <a href="" class="btn delete-employee">Delete </a>
+        </article>
+        <article class="employee-card">
+          <div class="employee-avatar">
+            <img class="avatar medium-av"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="hhhh">
+          </div>
+          <div class="employee-info">
+            <div>
+              <p>Name </p><span>Fego Fufu_Warrior</span>
+            </div>
+            <div>
+              <p>Start Date </p><span>04 Apr 2020</span>
+            </div>
+            <div>
+              <p>Gender </p><span>Male</span>
+            </div>
+            <div>
+              <p>Department </p><span>IT</span>
+            </div>
+            <div>
+              <p>Job Role </p><span>Senior Manager</span>
+            </div>
+          </div>
+          <a href="" class="btn delete-employee">Delete </a>
+        </article>
+        <article class="employee-card">
+          <div class="employee-avatar">
+            <img class="avatar medium-av"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="hhhh">
+          </div>
+          <div class="employee-info">
+            <div>
+              <p>Name </p><span>Fego Fufu_Warrior</span>
+            </div>
+            <div>
+              <p>Start Date </p><span>04 Apr 2020</span>
+            </div>
+            <div>
+              <p>Gender </p><span>Male</span>
+            </div>
+            <div>
+              <p>Department </p><span>IT</span>
+            </div>
+            <div>
+              <p>Job Role </p><span>Senior Manager</span>
+            </div>
+          </div>
+          <a href="" class="btn delete-employee">Delete </a>
+        </article>
+        <article class="employee-card">
+          <div class="employee-avatar">
+            <img class="avatar medium-av"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="hhhh">
+          </div>
+          <div class="employee-info">
+            <div>
+              <p>Name </p><span>Fego Fufu_Warrior</span>
+            </div>
+            <div>
+              <p>Start Date </p><span>04 Apr 2020</span>
+            </div>
+            <div>
+              <p>Gender </p><span>Male</span>
+            </div>
+            <div>
+              <p>Department </p><span>IT</span>
+            </div>
+            <div>
+              <p>Job Role </p><span>Senior Manager</span>
+            </div>
+          </div>
+          <a href="" class="btn delete-employee">Delete </a>
+        </article>
+        <article class="employee-card">
+          <div class="employee-avatar">
+            <img class="avatar medium-av"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="hhhh">
+          </div>
+          <div class="employee-info">
+            <div>
+              <p>Name </p><span>Fego Fufu_Warrior</span>
+            </div>
+            <div>
+              <p>Start Date </p><span>04 Apr 2020</span>
+            </div>
+            <div>
+              <p>Gender </p><span>Male</span>
+            </div>
+            <div>
+              <p>Department </p><span>IT</span>
+            </div>
+            <div>
+              <p>Job Role </p><span>Senior Manager</span>
+            </div>
+          </div>
+          <a href="" class="btn delete-employee">Delete </a>
+        </article>
+        <article class="employee-card">
+          <div class="employee-avatar">
+            <img class="avatar medium-av"
+              src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg" alt="hhhh">
+          </div>
+          <div class="employee-info">
+            <div>
+              <p>Name </p><span>Fego Fufu_Warrior</span>
+            </div>
+            <div>
+              <p>Start Date </p><span>04 Apr 2020</span>
+            </div>
+            <div>
+              <p>Gender </p><span>Male</span>
+            </div>
+            <div>
+              <p>Department </p><span>IT</span>
+            </div>
+            <div>
+              <p>Job Role </p><span>Senior Manager</span>
+            </div>
+          </div>
+          <a href="" class="btn delete-employee">Delete </a>
+        </article>
+
+      </section>
+    </section>
+
+  </section>
+</body>
+<script src="../../js/admin.js"></script>
+
+</html>
