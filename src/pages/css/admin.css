@@ -133,3 +133,58 @@ span {
   text-decoration: none;
   cursor: pointer;
 }
+
+@media(max-width: 1300px) {
+  .employees {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media(max-width: 1200px) {
+  .employees {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media(max-width: 999px) {
+  .employees {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .account-form {
+    width: 70%;
+  }
+}
+
+@media(max-width: 768px) {
+  .employees {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .account-form {
+    margin: 20% auto;
+    width: 70%;
+  }
+
+  .account-form label {
+    font-weight: 350;
+    margin: 0.55rem auto;
+    width: 80%;
+  }
+
+  .account-form h1 {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 576px) {
+  .employees {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .account-form label {
+    font-weight: 300;
+    margin: 0.55rem auto;
+    width: 100%;
+  }
+}
